@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#111111">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<title>Calisthenics 4-Day Rotation</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #f5f5f5;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.45;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .app {
+    max-width: 720px;
+    margin: auto;
+    padding: 18px 14px 40px;
+  }
+  header {
+    background: #111;
+    color: white;
+    border-radius: 22px;
+    padding: 22px 20px;
+    margin-bottom: 14px;
+  }
+  h1 { margin: 0 0 5px; font-size: 28px; }
+  .subtitle { opacity: .78; font-size: 14px; }
+  .rotation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+    margin-top: 18px;
+  }
+  .rot {
+    background: #fff;
+    color: #111;
+    border-radius: 13px;
+    padding: 10px 5px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 12px;
+  }
+  .rot span { display: block; font-size: 18px; margin-bottom: 3px; }
+  .note {
+    background: #fff;
+    border-radius: 18px;
+    padding: 16px;
+    margin-bottom: 14px;
+    border: 1px solid #e5e5e5;
+  }
+  .note strong { display:block; margin-bottom: 5px; }
+  .rules {
+    display: grid;
+    gap: 8px;
+  }
+  .rule {
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  .day {
+    background: white;
+    border-radius: 20px;
+    margin: 14px 0;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 3px 14px rgba(0,0,0,.05);
+  }
+  .day-head {
+    padding: 17px 17px 13px;
+    background: #111;
+    color: white;
+  }
+  .day-head h2 { margin:0; font-size:21px; }
+  .day-head p { margin:4px 0 0; opacity:.72; font-size:13px; }
+  .content { padding: 15px; }
+  h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    margin: 3px 0 9px;
+  }
+  .exercise {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 12px;
+    padding: 12px 3px;
+    border-bottom: 1px solid #eee;
+  }
+  .exercise:last-child { border-bottom:0; }
+  .name { font-weight: 700; font-size: 14px; }
+  .sets {
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 800;
+    background: #f0f0f0;
+    padding: 6px 8px;
+    border-radius: 9px;
+  }
+  .warmup {
+    background:#f7f7f7;
+    border-radius:13px;
+    padding:11px 12px;
+    margin-bottom:15px;
+    font-size:13px;
+  }
+  .finisher {
+    margin-top: 13px;
+    padding: 13px;
+    border-radius: 13px;
+    background:#111;
+    color:#fff;
+    font-size:13px;
+  }
+  .progress {
+    background: white;
+    border-radius:20px;
+    padding:18px;
+    margin-top:14px;
+    border:1px solid #e5e5e5;
+  }
+  .progress h2 { margin:0 0 12px; font-size:20px; }
+  .ladder {
+    margin: 10px 0;
+    padding: 11px 12px;
+    background:#f7f7f7;
+    border-radius:12px;
+    font-size:13px;
+    font-weight:600;
+  }
+  .goals {
+    display:grid;
+    gap:8px;
+    margin-top:10px;
+  }
+  .goal {
+    padding:11px 12px;
+    background:#f7f7f7;
+    border-radius:12px;
+    font-size:13px;
+  }
+  .footer {
+    text-align:center;
+    color:#777;
+    font-size:12px;
+    padding:18px 5px 5px;
+  }
+  @media (max-width:380px) {
+    .rotation { gap:4px; }
+    .rot { font-size:10px; }
+    .rot span { font-size:16px; }
+    .exercise { align-items:flex-start; }
+    .sets { font-size:11px; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+
+<header>
+  <h1>🗿 Calisthenics</h1>
+  <div class="subtitle">4-Day Home Workout Rotation</div>
+  <div class="rotation">
+    <div class="rot"><span>🔥</span>DAY 1<br>PUSH</div>
+    <div class="rot"><span>🦍</span>DAY 2<br>PULL</div>
+    <div class="rot"><span>⚡</span>DAY 3<br>UPPER</div>
+    <div class="rot"><span>🦵</span>DAY 4<br>LEGS</div>
+  </div>
+</header>
+
+<section class="note">
+  <strong>🔁 How to use this plan</strong>
+  Do Day 1 → Day 2 → Day 3 → Day 4 → repeat. Since the cycle is continuous, keep Day 3 moderate/skill-focused instead of making every workout maximal.
+</section>
+
+<section class="note">
+  <strong>📌 Basic Rules</strong>
+  <div class="rules">
+    <div class="rule">⏱️ Warm-up: 5–8 minutes before every workout.</div>
+    <div class="rule">⏱️ Rest: 60–120 sec between normal sets; 2–3 min for hard exercises.</div>
+    <div class="rule">🎯 Most sets: finish with about 1–2 reps left in the tank.</div>
+    <div class="rule">📈 When the top of a rep range becomes easy, progress to a harder variation.</div>
+    <div class="rule">💪 Typical session: 45–70 minutes.</div>
+    <div class="rule">🦴 If joints/tendons feel beat up, reduce volume or intensity rather than forcing it.</div>
+  </div>
+</section>
+
+<section class="day">
+  <div class="day-head">
+    <h2>DAY 1 — PUSH 🔥</h2>
+    <p>Chest + triceps + front delts</p>
+  </div>
+  <div class="content">
+    <h3>Warm-up</h3>
+    <div class="warmup">Jump rope — 3 min · Arm circles — 20 each direction · Wrist circles — 20 · Scapular push-ups — 2 × 10</div>
+    <h3>Workout</h3>
+    <div class="exercise"><div class="name">Push-ups</div><div class="sets">4 × 8–20</div></div>
+    <div class="exercise"><div class="name">Decline push-ups</div><div class="sets">3 × 8–15</div></div>
+    <div class="exercise"><div class="name">Diamond push-ups</div><div class="sets">3 × 6–15</div></div>
+    <div class="exercise"><div class="name">Pike push-ups</div><div class="sets">3 × 6–12</div></div>
+    <div class="exercise"><div class="name">Wide push-ups</div><div class="sets">2 × 10–20</div></div>
+    <div class="exercise"><div class="name">Bottom push-up hold</div><div class="sets">2 × 20–30 sec</div></div>
+    <div class="finisher">🪢 Jump rope: 3 × 1 min · 30 sec rest</div>
+  </div>
+</section>
+
+<section class="day">
+  <div class="day-head">
+    <h2>DAY 2 — PULL 🦍</h2>
+    <p>Back + biceps + rear delts</p>
+  </div>
+  <div class="content">
+    <h3>Warm-up</h3>
+    <div class="warmup">Dead hang — 2 × 20–30 sec · Scapular pull-ups — 2 × 8 · Arm circles — 20</div>
+    <h3>Workout</h3>
+    <div class="exercise"><div class="name">Pull-ups</div><div class="sets">4 × 4–12</div></div>
+    <div class="exercise"><div class="name">Chin-ups</div><div class="sets">3 × 5–12</div></div>
+    <div class="exercise"><div class="name">Negative pull-ups</div><div class="sets">3 × 3–5</div></div>
+    <div class="exercise"><div class="name">Australian / inverted rows*</div><div class="sets">3 × 8–15</div></div>
+    <div class="exercise"><div class="name">Dead hang</div><div class="sets">2 × 30–60 sec</div></div>
+    <div class="exercise"><div class="name">Scapular pull-ups</div><div class="sets">2 × 8–15</div></div>
+    <div class="finisher">⚠️ *Only use a genuinely safe, stable setup for rows. Never improvise with an unstable table/chair.</div>
+    <div class="warmup" style="margin-top:13px;margin-bottom:0"><b>Can't do many pull-ups?</b><br>Example: Pull-up → 2 reps → rest → 2 reps → rest → 3 negatives. Build toward clean 5 → 8 → 10+ pull-ups.</div>
+  </div>
+</section>
+
+<section class="day">
+  <div class="day-head">
+    <h2>DAY 3 — SHOULDERS + UPPER ⚡</h2>
+    <p>Shoulders + upper-body strength + calisthenics skills</p>
+  </div>
+  <div class="content">
+    <h3>Warm-up</h3>
+    <div class="warmup">Jump rope — 3 min · Wrist warm-up · Shoulder circles · Scapular push-ups — 2 × 10</div>
+    <h3>Workout</h3>
+    <div class="exercise"><div class="name">Pike push-ups</div><div class="sets">4 × 6–12</div></div>
+    <div class="exercise"><div class="name">Pseudo-planche push-ups</div><div class="sets">3 × 5–12</div></div>
+    <div class="exercise"><div class="name">Pull-ups</div><div class="sets">3 × 5–10</div></div>
+    <div class="exercise"><div class="name">Diamond push-ups</div><div class="sets">3 × 8–15</div></div>
+    <div class="exercise"><div class="name">Archer push-up progression</div><div class="sets">3 × 5–10/side</div></div>
+    <div class="exercise"><div class="name">Wall handstand hold</div><div class="sets">3 × 20–45 sec</div></div>
+    <div class="exercise"><div class="name">Hollow-body hold</div><div class="sets">3 × 20–40 sec</div></div>
+    <div class="finisher">⚡ Keep this day moderate and skill-focused. Don't turn it into another max-effort push/pull day.</div>
+  </div>
+</section>
+
+<section class="day">
+  <div class="day-head">
+    <h2>DAY 4 — LEGS + LOWER 🦵</h2>
+    <p>Quads + glutes + calves + core</p>
+  </div>
+  <div class="content">
+    <h3>Warm-up</h3>
+    <div class="warmup">Jump rope — 3–5 min · Bodyweight squats — 20 · Lunges — 10/leg · Hip circles — 10 each direction · Ankle circles — 10 each</div>
+    <h3>Workout</h3>
+    <div class="exercise"><div class="name">Bodyweight squats</div><div class="sets">4 × 15–30</div></div>
+    <div class="exercise"><div class="name">Bulgarian split squats</div><div class="sets">3 × 8–15/leg</div></div>
+    <div class="exercise"><div class="name">Reverse lunges</div><div class="sets">3 × 10–15/leg</div></div>
+    <div class="exercise"><div class="name">Single-leg glute bridge</div><div class="sets">3 × 10–15/leg</div></div>
+    <div class="exercise"><div class="name">Single-leg calf raises</div><div class="sets">4 × 15–25/leg</div></div>
+    <div class="exercise"><div class="name">Wall sit</div><div class="sets">2 × 45–90 sec</div></div>
+    <div class="exercise"><div class="name">Hanging knee raises</div><div class="sets">3 × 8–15</div></div>
+    <div class="finisher">🪢 Jump rope: 5 rounds → 45 sec fast → 30 sec rest</div>
+  </div>
+</section>
+
+<section class="progress">
+  <h2>📈 Progression System</h2>
+  <p><b>Don't just repeat the same reps forever.</b> Add reps, sets, or difficulty over time.</p>
+  <div class="ladder">PUSH: Regular → Decline → Diamond → Archer → Pseudo-planche → Planche</div>
+  <div class="ladder">PULL: Dead hang → Scapular pull-up → Pull-up → Chin-up → Archer pull-up → Muscle-up</div>
+  <div class="ladder">SHOULDERS: Pike → Elevated pike → Wall handstand → HSPU progression → Freestanding HSPU</div>
+  <div class="ladder">LEGS: Squat → Split squat → Bulgarian → Shrimp squat → Pistol squat</div>
+  <div class="ladder">CORE: Hollow hold → Hanging knee raise → Hanging leg raise → Toes-to-bar</div>
+</section>
+
+<section class="note">
+  <strong>🎯 Long-Term Calisthenics Goals</strong>
+  <div class="goals">
+    <div class="goal">💪 Push: Build toward advanced push-up and planche progressions.</div>
+    <div class="goal">🦍 Pull: Build strong, clean pull-ups and eventually work toward muscle-ups.</div>
+    <div class="goal">⚡ Shoulders: Progress from pike push-ups to handstand push-up variations.</div>
+    <div class="goal">🦵 Legs: Progress toward shrimp squats and pistol squats.</div>
+    <div class="goal">🧱 Core: Progress toward hanging leg raises and toes-to-bar.</div>
+  </div>
+</section>
+
+<div class="footer">HOME CALISTHENICS • 4-DAY ROTATION • PROGRESS, DON'T RUSH</div>
+
+</div>
+<script>if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js")}</script></body>
+</html>
